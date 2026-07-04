@@ -1,0 +1,31 @@
+.trust-badge {
+  overflow: visible;
+}
+
+.trust-badge-ring {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 1.4;
+  stroke-dasharray: 3 2.4;
+}
+
+.trust-badge-fill {
+  fill: var(--color-primary-light);
+  stroke: var(--color-primary);
+  stroke-width: 1;
+}
+
+.trust-badge-check {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 4.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.trust-badge text {
+  font-family: var(--font-mono);
+  font-size: 6.4px;
+  letter-spacing: 1.5px;
+  fill: var(--color-primary);
+}

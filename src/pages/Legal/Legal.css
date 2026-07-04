@@ -1,0 +1,17 @@
+.legal-wrap {
+  max-width: 760px;
+}
+.legal-wrap h2 {
+  margin-top: 40px;
+  font-size: 1.25rem;
+}
+.legal-wrap p, .legal-wrap li {
+  color: var(--color-text-muted);
+}
+.legal-wrap ul { padding-left: 20px; }
+.legal-updated {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+  display: block;
+}

@@ -1,0 +1,16 @@
+.auth-wrap {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.auth-card { padding: 36px; }
+
+.auth-card h1 { font-size: 1.6rem; margin-bottom: 6px; }
+.auth-card .hero-sub { margin-bottom: 26px; font-size: 0.95rem; }
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}

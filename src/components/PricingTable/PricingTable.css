@@ -1,0 +1,96 @@
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 64px;
+}
+@media (max-width: 900px) { .pricing-cards { grid-template-columns: 1fr; } }
+
+.pricing-card {
+  padding: 28px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.pricing-card.is-recommended {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.pricing-card-badge {
+  position: absolute;
+  top: -18px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-surface);
+  padding: 4px 10px 4px 4px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.pricing-card-price {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0 22px;
+}
+.pricing-card-price .mono {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+.pricing-card-price span:last-child { font-size: 0.8rem; color: var(--color-text-muted); }
+
+.pricing-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.pricing-card-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+.pricing-card-list li.is-yes { color: var(--color-text); }
+.pricing-card-list li.is-yes svg { color: var(--color-success); }
+.pricing-card-list li.is-no { color: var(--color-text-muted); }
+.pricing-card-list li.is-no svg { color: var(--color-border-strong); }
+
+.pricing-compare-wrap { overflow-x: auto; }
+
+.pricing-compare {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.pricing-compare th, .pricing-compare td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+.pricing-compare th:first-child, .pricing-compare td:first-child {
+  text-align: left;
+  color: var(--color-text-muted);
+}
+.pricing-compare thead th {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-family: var(--font-display);
+}
+[data-theme="dark"] .pricing-compare thead th { color: var(--color-text); }
+.pricing-compare td svg { margin: 0 auto; color: var(--color-success); }
+.pricing-compare tbody tr:last-child td { border-bottom: none; }

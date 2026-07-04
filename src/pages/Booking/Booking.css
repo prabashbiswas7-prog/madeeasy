@@ -1,0 +1,38 @@
+.booking-grid { max-width: 620px; }
+
+.booking-form { padding: 32px; }
+
+.address-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.address-toggle button {
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+.address-toggle button.is-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+.address-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.address-fields input { width: 100%; padding: 12px 14px; border-radius: var(--radius-sm); border: 1px solid var(--color-border-strong); background: var(--color-surface); color: var(--color-text); }
+
+.booking-success { max-width: 560px; }
+.booking-success-card {
+  padding: 40px;
+  text-align: center;
+}
+.booking-success-card h1 { margin: 14px 0; }
+.booking-success-card p { margin-bottom: 26px; }
